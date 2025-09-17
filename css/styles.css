@@ -21,13 +21,11 @@
   );
   --bs-gradient: var(--main-gradient) !important;
 
-  --bs-blue: #faffa3;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #ffaf38;
   --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
+  --bs-orange: #ffaf38;
+  --bs-yellow: #faffa3;
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
@@ -36,7 +34,7 @@
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
+  --bs-gray-200: #ffaf38;
   --bs-gray-300: #dee2e6;
   --bs-gray-400: #ced4da;
   --bs-gray-500: #adb5bd;
@@ -2049,7 +2047,7 @@ progress {
   opacity: 1;
 }
 .form-control:disabled {
-  background-color: #e9ecef;
+  background-color: #ffaf38;
   opacity: 1;
 }
 .form-control::file-selector-button {
@@ -2058,7 +2056,7 @@ progress {
   -webkit-margin-end: 0.75rem;
           margin-inline-end: 0.75rem;
   color: #212529;
-  background-color: #e9ecef;
+  background-color: #ffaf38;
   pointer-events: none;
   border-color: inherit;
   border-style: solid;
@@ -2189,7 +2187,7 @@ textarea.form-control-lg {
   background-image: none;
 }
 .form-select:disabled {
-  background-color: #e9ecef;
+  background-color: #ffaf38;
 }
 .form-select:-moz-focusring {
   color: transparent;
@@ -2544,7 +2542,7 @@ textarea.form-control-lg {
   color: #212529;
   text-align: center;
   white-space: nowrap;
-  background-color: #e9ecef;
+  background-color: #ffaf38;
   border: 1px solid #ced4da;
   border-radius: 0.375rem;
 }
@@ -3244,7 +3242,7 @@ textarea.form-control-lg {
   --bs-dropdown-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   --bs-dropdown-link-color: #212529;
   --bs-dropdown-link-hover-color: #1e2125;
-  --bs-dropdown-link-hover-bg: #e9ecef;
+  --bs-dropdown-link-hover-bg: #ffaf38;
   --bs-dropdown-link-active-color: #fff;
   --bs-dropdown-link-active-bg: #faffa3;
   --bs-dropdown-link-disabled-color: #adb5bd;
@@ -3657,7 +3655,7 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-width: 1px;
   --bs-nav-tabs-border-color: #dee2e6;
   --bs-nav-tabs-border-radius: 0.375rem;
-  --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
+  --bs-nav-tabs-link-hover-border-color: #ffaf38 #ffaf38 #dee2e6;
   --bs-nav-tabs-link-active-color: #495057;
   --bs-nav-tabs-link-active-bg: #fff;
   --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
@@ -4519,10 +4517,10 @@ textarea.form-control-lg {
   --bs-pagination-border-color: #dee2e6;
   --bs-pagination-border-radius: 0.375rem;
   --bs-pagination-hover-color: var(--bs-link-hover-color);
-  --bs-pagination-hover-bg: #e9ecef;
+  --bs-pagination-hover-bg: #ffaf38;
   --bs-pagination-hover-border-color: #dee2e6;
   --bs-pagination-focus-color: var(--bs-link-hover-color);
-  --bs-pagination-focus-bg: #e9ecef;
+  --bs-pagination-focus-bg: #ffaf38;
   --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(30, 48, 243, 0.25);
   --bs-pagination-active-color: #fff;
   --bs-pagination-active-bg: #faffa3;
@@ -4747,7 +4745,7 @@ textarea.form-control-lg {
 .progress {
   --bs-progress-height: 1rem;
   --bs-progress-font-size: 0.75rem;
-  --bs-progress-bg: #e9ecef;
+  --bs-progress-bg: #ffaf38;
   --bs-progress-border-radius: 0.375rem;
   --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-progress-bar-color: #fff;
@@ -4804,7 +4802,7 @@ textarea.form-control-lg {
   --bs-list-group-action-hover-color: #495057;
   --bs-list-group-action-hover-bg: #f8f9fa;
   --bs-list-group-action-active-color: #212529;
-  --bs-list-group-action-active-bg: #e9ecef;
+  --bs-list-group-action-active-bg: #ffaf38;
   --bs-list-group-disabled-color: #6c757d;
   --bs-list-group-disabled-bg: #fff;
   --bs-list-group-active-color: #fff;
