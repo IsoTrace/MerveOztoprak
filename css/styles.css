@@ -14,6 +14,9 @@
 
   --main-indigo: #5D3FD3;
   --main-orange: #E26A2C;
+  --bs-primary: #E26A2C;
+  --bs-secondary: #5D3FD3;
+  
   --main-gradient: linear-gradient(
     180deg,
     rgba(226, 106, 44, 1) 0%,
