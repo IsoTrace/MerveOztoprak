@@ -19,7 +19,7 @@
     rgba(250, 255, 163, 1) 0%,
     rgba(255, 175, 56, 1) 100%
   );
-  --bs-gradient: var(--main-gradient);
+  --bs-gradient: var(--main-gradient) !important;
 
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
