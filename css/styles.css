@@ -11,6 +11,16 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+
+  --main-yellow: #ffff9e;
+  --main-orange: #ff9e0d;
+  --main-gradient: linear-gradient(
+    0deg,
+    rgba(255, 255, 158, 1) 0%,
+    rgba(255, 158, 13, 1) 100%
+  );
+  --bs-gradient: var(--main-gradient);
+
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -11731,4 +11741,8 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+
+body {
+  background-color: #ffffff !important;
 }
