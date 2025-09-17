@@ -12,12 +12,12 @@
  */
 :root {
 
-  --main-yellow: #ffff9e;
-  --main-orange: #ff9e0d;
+  --main-yellow: #faffa3;
+  --main-orange: #ffaf38;
   --main-gradient: linear-gradient(
     0deg,
-    rgba(255, 255, 158, 1) 0%,
-    rgba(255, 158, 13, 1) 100%
+    rgba(250, 255, 163, 1) 0%,
+    rgba(255, 175, 56, 1) 100%
   );
   --bs-gradient: var(--main-gradient);
 
