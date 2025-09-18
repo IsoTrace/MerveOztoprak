@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://isotrace.github.io/MerveOztoprak/sitemap.xml
