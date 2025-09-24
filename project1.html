@@ -7,7 +7,7 @@
   <title>Discovering Nature’s Fingerprints – Merve T. Öztoprak</title>
   <meta name="description" content="PhD project: Enabling high-precision isotope ratio measurements using soft-ionization mass spectrometry in bioanalytical workflows.">
 
-  <!-- Google Fonts (same as projects page) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -20,6 +20,42 @@
   <style>
     body, h1, h2, h3, h4, h5, h6, p, li, a, span, div {
       font-family: 'Plus Jakarta Sans', sans-serif !important;
+    }
+    /* Hero section with background image */
+    .hero-image {
+      background: url('assets/project_phd_bg.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.55); /* dark overlay to improve text contrast */
+      padding: 2rem;
+      border-radius: 0.75rem;
+    }
+    /* Section subtitles in orange */
+    h2.fw-bolder {
+      color: #ff6600; /* replace with your site's orange */
+    }
+    /* Purple image box */
+    .purple-box {
+      background: #6f42c1; /* Bootstrap purple, adjust to your theme */
+      padding: 1rem;
+      border-radius: 0.75rem;
+      display: inline-block;
+    }
+    .purple-box img {
+      border-radius: 0.5rem;
+      max-width: 100%;
+      height: auto;
+    }
+    .purple-box p {
+      color: #f8f9fa; /* light text on purple */
     }
   </style>
 </head>
@@ -47,9 +83,9 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="bg-gradient-primary-to-secondary text-white py-5">
-    <div class="container px-5 text-center">
+  <!-- Hero Section with Background Image -->
+  <header class="hero-image">
+    <div class="hero-overlay">
       <h1 class="display-4 fw-bolder">Discovering Nature’s Fingerprints</h1>
       <p class="lead fw-normal">Isotope Ratio Analysis on Bioanalytical Mass Spectrometers</p>
     </div>
@@ -70,10 +106,12 @@
         </p>
       </div>
       
-      <!-- Image with caption -->
+      <!-- Image with purple box -->
       <div class="text-center mb-5">
-        <img src="assets/project_phd.jpg" alt="PhD isotope project" class="img-fluid rounded shadow" style="max-width:700px;">
-        <p class="text-muted small mt-2">Figure 1. Bioanalytical Orbitrap mass spectrometer workflow.</p>
+        <div class="purple-box shadow">
+          <img src="assets/project_phd.jpg" alt="PhD isotope project">
+          <p class="small mt-2">Figure 1. Bioanalytical Orbitrap mass spectrometer workflow.</p>
+        </div>
       </div>
       
       <!-- Methods -->
