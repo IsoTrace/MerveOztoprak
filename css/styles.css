@@ -11748,3 +11748,123 @@ html {
 body {
   background-color: #ffffff !important;
 }
+/* =========================================
+   GLOBAL THEME OVERRIDES (Lilac & Orange)
+   ========================================= */
+:root {
+  --bs-primary: #AD9EE8;          /* main lilac */
+  --bs-primary-rgb: 173, 158, 232;
+  --bs-secondary: #E26A2C;        /* brand orange */
+  --bs-secondary-rgb: 226, 106, 44;
+
+  --bs-link-color: #8e44ad;       /* purple link */
+  --bs-link-hover-color: #732d91; /* darker on hover */
+}
+
+/* =========================================
+   TYPOGRAPHY & BASE STYLES
+   ========================================= */
+
+/* Global font */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333; /* keeps text readable on light background */
+  background-color: #fff;
+}
+
+/* Headings (orange subtitles, inherit font) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+h2, h3, h4 {
+  color: var(--bs-secondary);
+}
+
+/* Hyperlinks */
+a {
+  color: var(--bs-link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--bs-link-hover-color);
+  text-decoration: underline;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+/* Primary button styling (Lilac) */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #8e44ad;     /* darker lilac */
+  --bs-btn-hover-border-color: #8e44ad;
+  --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #732d91;    /* darkest lilac */
+  --bs-btn-active-border-color: #732d91;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+/* Secondary button styling (Orange) */
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-secondary);
+  --bs-btn-border-color: var(--bs-secondary);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #c95b20;     /* darker orange */
+  --bs-btn-hover-border-color: #c95b20;
+  --bs-btn-focus-shadow-rgb: var(--bs-secondary-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #a64519;    /* darkest orange */
+  --bs-btn-active-border-color: #a64519;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-secondary);
+  --bs-btn-disabled-border-color: var(--bs-secondary);
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+/* Navbar links */
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
+  color: #8e44ad !important;  /* lilac brand purple */
+}
+
+/* Dropdown items */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f3e6f9;  /* soft lilac */
+  color: #8e44ad !important;
+}
+
+/* =========================================
+   COMPONENTS
+   ========================================= */
+
+/* List groups */
+.list-group {
+  --bs-list-group-action-active-bg: var(--bs-secondary);
+  --bs-list-group-active-bg: var(--bs-primary);
+  --bs-list-group-active-border-color: var(--bs-primary);
+}
+
+/* Progress bars */
+.progress {
+  --bs-progress-bg: var(--bs-secondary);   /* orange track */
+  --bs-progress-bar-bg: var(--bs-primary); /* lilac bar */
+}
