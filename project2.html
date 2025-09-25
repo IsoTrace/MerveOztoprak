@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   
-  <title>Caltech Project – Merve T. Öztoprak</title>
-  <meta name="description" content="Designed a GC–Orbitrap method enabling the first direct site-specific carbon isotope analysis of phytane.">
+  <title>GC-Orbitrap Phytane Project – Merve T. Öztoprak</title>
+  <meta name="description" content="First site-specific carbon isotope analysis of phytane using GC–Orbitrap mass spectrometry (Caltech collaboration).">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,6 @@
     body, h1, h2, h3, h4, h5, h6, p, li, a, span, div {
       font-family: 'Plus Jakarta Sans', sans-serif !important;
     }
-    /* Hero section with background image */
     .hero-image {
       background: url('assets/project_caltech_bg.jpg') no-repeat center center;
       background-size: cover;
@@ -34,17 +33,15 @@
       text-align: center;
     }
     .hero-overlay {
-      background: rgba(0, 0, 0, 0.55); /* dark overlay to improve text contrast */
+      background: rgba(0, 0, 0, 0.55);
       padding: 2rem;
       border-radius: 0.75rem;
     }
-    /* Section subtitles in orange */
     h2.fw-bolder {
-      color: #E26A2C; /* your orange */
+      color: #E26A2C;
     }
-    /* Purple image box */
     .purple-box {
-      background: #6f42c1; /* Bootstrap purple, adjust to your theme */
+      background: #6f42c1;
       padding: 1rem;
       border-radius: 0.75rem;
       display: inline-block;
@@ -55,7 +52,7 @@
       height: auto;
     }
     .purple-box p {
-      color: #f8f9fa; /* light text on purple */
+      color: #f8f9fa;
     }
   </style>
 </head>
@@ -97,11 +94,11 @@
     </div>
   </nav>
 
-  <!-- Hero Section with Background Image -->
+  <!-- Hero Section -->
   <header class="hero-image">
     <div class="hero-overlay">
-      <h1 class="display-4 fw-bolder">Caltech Project</h1>
-      <p class="lead fw-normal">GC–Orbitrap Site-Specific Isotope Analysis of Phytane</p>
+      <h1 class="display-4 fw-bolder">Site-Specific Isotope Analysis of Phytane using the GC–Orbitrap</h1>
+      <p class="lead fw-normal">Independent research project at Caltech</p>
     </div>
   </header>
 
@@ -109,22 +106,23 @@
   <section class="py-5">
     <div class="container px-5">
       
-      <!-- Intro -->
+      <!-- Overview -->
       <div class="mb-5">
         <h2 class="fw-bolder">Overview</h2>
         <p class="lead">
-          At Caltech, we designed a novel gas chromatography–Orbitrap mass spectrometry 
-          (GC–Orbitrap) method that enabled the <strong>first direct site-specific carbon isotope 
-          analysis of phytane</strong>. This work combined advanced chromatography with high-resolution 
-          mass spectrometry to resolve isotope distributions previously inaccessible by IRMS.
+          In collaboration with Caltech, I developed a novel <strong>GC–Orbitrap workflow</strong> 
+          that enabled the first reproducible <strong>position-specific isotope ratio analysis (PSIA)</strong> 
+          of the sedimentary biomarker phytane. This study demonstrated that Orbitrap high-resolution 
+          mass spectrometry can recover intramolecular δ<sup>13</sup>C patterns from hydrocarbon fragments 
+          at nanomolar concentrations.
         </p>
       </div>
       
-      <!-- Image with purple box -->
+      <!-- Image -->
       <div class="text-center mb-5">
         <div class="purple-box shadow">
-          <img src="assets/project_caltech.jpg" alt="Caltech GC–Orbitrap phytane project">
-          <p class="small mt-2">Figure 1. GC–Orbitrap setup for site-specific isotope measurements of phytane.</p>
+          <img src="assets/project_caltech.jpg" alt="GC–Orbitrap analysis of phytane">
+          <p class="small mt-2">Figure 1. GC–Orbitrap setup in peak capture mode for isotopologue analysis of phytane fragments.</p>
         </div>
       </div>
       
@@ -132,10 +130,12 @@
       <div class="mb-5">
         <h2 class="fw-bolder">Methods</h2>
         <p>
-          We developed a gas chromatography separation tailored to phytane and coupled it to 
-          a high-resolution Orbitrap analyzer. This approach exploited fragment-specific isotope 
-          ratios, allowing us to reconstruct <em>intramolecular δ<sup>13</sup>C patterns</em>. The method 
-          was benchmarked against theoretical isotope models and validated using standards.
+          Using a modified <strong>GC–Orbitrap system with a trapping reservoir</strong>, we captured 
+          phytane during elution and extended its signal over 60 minutes, allowing for high-precision 
+          isotope analysis of the diagnostic <em>C<sub>6</sub>H<sub>13</sub><sup>+</sup></em> fragment 
+          (m/z 85). Baseline separation from overlapping isotopologues ensured accurate quantification. 
+          The method was validated against GC–IRMS averages and processed with custom R pipelines for 
+          filtering, error propagation, and comparison with theoretical limits.
         </p>
       </div>
       
@@ -143,9 +143,10 @@
       <div class="mb-5">
         <h2 class="fw-bolder">Key Results</h2>
         <ul>
-          <li>Demonstrated the first direct site-specific carbon isotope analysis of phytane.</li>
-          <li>Revealed position-specific δ<sup>13</sup>C differences across phytane’s carbon skeleton.</li>
-          <li>Showed how site-specific isotope data can inform ancient biosynthetic pathways.</li>
+          <li>Achieved <strong>high precision isotope ratios</strong> (SE &lt;0.5‰, SD &lt;1.5‰) using &lt;15 nmol phytane.</li>
+          <li>Showed consistent differences between phytane from <em>Anacystis</em> (cyanobacteria), <em>Halobacterium</em>, and a commercial standard.</li>
+          <li>Demonstrated that fragment isotope ratios align with molecular average δ<sup>13</sup>C values, confirming biosynthetic origins.</li>
+          <li>Established Orbitrap PSIA as a viable tool for hydrocarbons beyond amino acids and small molecules.</li>
         </ul>
       </div>
       
@@ -153,18 +154,18 @@
       <div class="mb-5">
         <h2 class="fw-bolder">Impact</h2>
         <p>
-          This project provided a proof-of-concept for applying GC–Orbitrap workflows in 
-          <strong>geobiology and organic geochemistry</strong>. By accessing intramolecular isotope 
-          signatures, we open new possibilities for reconstructing early life metabolisms, 
-          petroleum origins, and molecular diagenesis processes.
+          This project represents a <strong>proof-of-concept for PSIA of sedimentary biomarkers</strong>. 
+          By targeting diagnostic fragments, it is possible to deconvolve the isotopic fingerprints of 
+          phytane’s biosynthetic precursors, distinguishing sources such as chlorophyll versus archaeal 
+          lipids. The approach opens a path for applying Orbitrap-based PSIA to diverse hydrocarbons, 
+          with applications in <strong>geobiology, paleoenvironmental reconstructions, and petroleum forensics</strong>:contentReference[oaicite:4]{index=4}.
         </p>
       </div>
       
-      <!-- Back link -->
+      <!-- Back -->
       <div class="text-center">
         <a class="btn btn-primary btn-lg" href="projects.html">← Back to Projects</a>
       </div>
-      
     </div>
   </section>
 
@@ -186,7 +187,7 @@
   </div>
 </footer>
 
-<!-- Bootstrap core JS -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
