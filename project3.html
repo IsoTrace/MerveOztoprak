@@ -3,30 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  
+
   <title>ANU Project – Merve T. Öztoprak</title>
   <meta name="description" content="Fieldwork in Western Australia; isotopic and biomarker analysis of Precambrian cores to reconstruct early ecosystems.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
   <!-- Bootstrap icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Core theme CSS (includes Bootstrap) -->
+  <!-- Core theme CSS -->
   <link href="css/styles.css" rel="stylesheet" />
 
   <style>
-    /* enforce font same as rest */
-    body, h1, h2, h3, h4, h5, h6, p, li, a, span, div {
+    body {
       font-family: 'Plus Jakarta Sans', sans-serif !important;
     }
     .hero-image {
       background: url('assets/project_anu_bg.jpg') no-repeat center center;
       background-size: cover;
       position: relative;
-      height: 50vh;
+      height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -38,23 +37,27 @@
       padding: 2rem;
       border-radius: 0.75rem;
     }
-    /* Subtitles in orange (your style) */
-    h2.fw-bolder {
+    h2.section-title {
       color: #E26A2C;
+      font-weight: 700;
+      margin-top: 2rem;
     }
-    .purple-box {
+    .figure-box {
       background: #6f42c1;
       padding: 1rem;
       border-radius: 0.75rem;
       display: inline-block;
+      margin: 1.5rem 0;
     }
-    .purple-box img {
+    .figure-box img {
       border-radius: 0.5rem;
       max-width: 100%;
       height: auto;
     }
-    .purple-box p {
+    .figure-box p {
       color: #f8f9fa;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
@@ -96,68 +99,79 @@
     </div>
   </nav>
 
-  <!-- Hero section -->
+  <!-- Hero -->
   <header class="hero-image">
     <div class="hero-overlay">
-      <h1 class="display-4 fw-bolder">Australian National University Project</h1>
-      <p class="lead fw-normal">Isotopic & Biomarker Reconstructions of Precambrian Ecosystems</p>
+      <h1 class="display-4 fw-bolder">Reconstructions of Precambrian Ecosystems using Isotopic & Biomarker signatures</h1>
+      <p class="lead fw-normal">Australian National University Project</p>
     </div>
   </header>
 
-  <!-- Main content -->
+  <!-- Content -->
   <section class="py-5">
     <div class="container px-5">
       
-      <!-- Overview / Intro -->
-      <div class="mb-5">
-        <h2 class="fw-bolder">Overview</h2>
-        <p class="lead">
-          During my tenure at ANU, I conducted fieldwork in Western Australia, sampling Precambrian core fragments.
-          The aim was to reconstruct early microbial ecosystems using combined **isotope ratio measurements** and **biomarker analysis**.
+      <!-- Overview -->
+      <div>
+        <h2 class="section-title">Overview</h2>
+        <p>
+          During my MSc research at the Australian National University, I carried out field and laboratory 
+          investigations on Precambrian core fragments from Western Australia. The project aimed to reconstruct 
+          microbial ecosystems in Archaean and Proterozoic strata using a combined approach of biomarker 
+          geochemistry and compound-specific isotope analysis. The project was supervised by 
+          <a href="https://scholar.google.com/citations?user=oqL0DAUAAAAJ&hl=de&oi=ao" target="_blank" rel="noopener noreferrer">Prof. Jochen Brocks</a>
         </p>
       </div>
 
-      <!-- Image box -->
-      <div class="text-center mb-5">
-        <div class="purple-box shadow">
+      <!-- Figure -->
+      <div class="text-center">
+        <div class="figure-box shadow">
           <img src="assets/project_anu.jpg" alt="ANU fieldwork sample">
-          <p class="small mt-2">Figure 1. Precambrian core sample collection and processing.</p>
+          <p>Figure 1. Precambrian core sample collection and laboratory preparation.</p>
         </div>
       </div>
 
       <!-- Methods -->
-      <div class="mb-5">
-        <h2 class="fw-bolder">Methods</h2>
+      <div>
+        <h2 class="section-title">Methods</h2>
         <p>
-          I applied compound-specific isotope ratio analysis (CS-IRMS / LC–MS where applicable) paired with biomarker GC–MS profiling.
-          We targeted hopanes, steranes, and carotenoids preserved in ancient sediments, and measured isotopic signatures across these molecules.
-          Calibrations and correction models were integrated to account for diagenetic alteration and instrument drift.
+          Organic extracts were analyzed using gas chromatography–mass spectrometry (GC–MS) with 
+          electron ionization (70 eV, m/z 50–800). Data acquisition was processed in Thermo Xcalibur. 
+          Screening targeted n-alkanes, hopanes, steranes, and aromatic steroids. 
+          Compound-specific isotope analysis (δ<sup>13</sup>C) was applied to selected biomarkers to 
+          investigate metabolic pathways. Maturity indicators such as sterane isomer ratios and hopane 
+          Ts/Tm were evaluated to detect alteration and contamination.
         </p>
       </div>
 
       <!-- Results -->
-      <div class="mb-5">
-        <h2 class="fw-bolder">Key Results</h2>
+      <div>
+        <h2 class="section-title">Key Results</h2>
         <ul>
-          <li>Resolved biomarker distributions consistent with microbial community reconstructions in Archaean strata.</li>
-          <li>Observed isotopic offsets between lipid biomarkers suggesting metabolic heterogeneity.</li>
-          <li>Linked isotope–biomarker evidence to paleoenvironments (e.g. redox gradients, nutrient availability).</li>
+          <li>Resolved biomarker assemblages indicated microbial communities in Archaean sediments, 
+              including evidence for cyanobacteria and eukaryotic precursors.</li>
+          <li>Odd-over-even preference in n-alkanes confirmed syngenetic origin of preserved hydrocarbons.</li>
+          <li>Isotopic offsets between steranes and hopanes suggested metabolic heterogeneity in early ecosystems.</li>
+          <li>Contamination markers were systematically identified and excluded, improving dataset robustness.</li>
         </ul>
       </div>
 
-      <!-- Impact / Significance -->
-      <div class="mb-5">
-        <h2 class="fw-bolder">Impact</h2>
+      <!-- Impact -->
+      <div>
+        <h2 class="section-title">Impact</h2>
         <p>
-          This work bridges molecular geochemistry and stable isotope science, providing a window into Earth’s earliest ecosystems.
-          The approach demonstrates how combining biomarker chemistry with isotopes can reconstruct ancient metabolism, community structure, and environmental conditions.
+          This project illustrates how the integration of biomarker distributions with isotopic measurements 
+          can reconstruct the ecological and metabolic structure of ancient environments. By combining 
+          contamination-screening protocols with isotope geochemistry, the ANU study provides a robust 
+          framework for investigating the origins of microbial ecosystems in the Precambrian.
         </p>
       </div>
 
-      <!-- Back link -->
-      <div class="text-center">
+      <!-- Back -->
+      <div class="text-center mt-4">
         <a class="btn btn-primary btn-lg" href="projects.html">← Back to Projects</a>
       </div>
+
     </div>
   </section>
 
@@ -173,7 +187,7 @@
         <span class="mx-1">&middot;</span>
         <a class="small" href="#!">Terms</a>
         <span class="mx-1">&middot;</span>
-        <a class="small" href="contact.html">Contact</a></span>
+        <a class="small" href="contact.html">Contact</a>
       </div>
     </div>
   </div>
