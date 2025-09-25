@@ -11834,3 +11834,48 @@ a:hover {
   --bs-progress-bg: var(--bs-secondary);   /* orange track */
   --bs-progress-bar-bg: var(--bs-primary); /* lilac bar */
 }
+/* === Global image box reset (remove purple everywhere) === */
+.purple-box,
+.image-box {
+  background: transparent !important;  /* no fill */
+  padding: 0 !important;               /* no inset padding */
+  border: 0;                            /* no border */
+  border-radius: 0;                     /* square corners; change to var(--bs-border-radius) if you want rounded */
+  box-shadow: none !important;          /* no shadow */
+  display: inline-block;
+}
+
+.purple-box img,
+.image-box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;                     /* match container corners */
+}
+
+/* Text inside former purple boxes should inherit normal color */
+.purple-box p,
+.image-box p {
+  color: inherit !important;
+  margin-top: 0.5rem;
+}
+
+/* Optional: a clean white frame you can opt-in to when desired */
+.image-box--white {
+  background: #fff;
+  padding: 0.75rem;
+  border-radius: var(--bs-border-radius);
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.06);
+}
+.image-box--white img {
+  border-radius: calc(var(--bs-border-radius) - 0.25rem);
+}
+
+/* Optional: fixed-width helpers you can reuse in HTML */
+.img-w-300 { width: 300px; max-width: 100%; height: auto; }
+.img-w-400 { width: 400px; max-width: 100%; height: auto; }
+.img-w-600 { width: 600px; max-width: 100%; height: auto; }
+
+/* Optional: quick centering utility */
+.centered { text-align: center; }
+
