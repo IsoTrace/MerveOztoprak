@@ -27,16 +27,21 @@
       background-size: cover;
       height: 50vh; /* change to 100vh for full screen */
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       color: white;
       text-align: center;
       position: relative;
     }
-    .hero-overlay {
-      background: rgba(0, 0, 0, 0.55);
-      padding: 2rem;
-      border-radius: 0.75rem;
+    .hero-image h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .hero-image .subtitle {
+      margin-top: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 400;
     }
     h2.fw-bolder {
       color: #ff6600;
@@ -95,8 +100,8 @@
 
   <!-- Hero -->
   <header class="hero-image">
-      <h1 class="display-4 fw-bolder">Earthworm Diversity and Climate Impact</h1>
-      <p class="lead fw-normal">DAAD RISE Worldwide Project at CUHK, Hong Kong</p>
+    <h1 class="display-4 fw-bolder">Earthworm Diversity and Climate Impact</h1>
+    <p class="lead fw-normal subtitle">DAAD RISE Worldwide Project at CUHK, Hong Kong</p>
   </header>
 
   <!-- Content -->
@@ -188,6 +193,7 @@
             </p>
           </div>
         </div>
+      </div>
 
       <!-- Scholarship -->
       <div class="mb-5">
