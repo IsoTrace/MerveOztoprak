@@ -11879,3 +11879,19 @@ a:hover {
 /* Optional: quick centering utility */
 .centered { text-align: center; }
 
+/* Center images (block-level) and keep captions centered */
+figure,
+.image-box,
+.purple-box {
+  text-align: center;
+}
+
+figure img,
+.image-box img,
+.purple-box img {
+  display: block;          /* many of your images are block-level */
+  margin-left: auto;       /* this centers the block */
+  margin-right: auto;
+}
+
+
