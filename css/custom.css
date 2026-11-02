@@ -1,0 +1,71 @@
+/* Site additions on top of the Start Bootstrap Personal theme (styles.css) */
+:root {
+  --mto-orange: #E26A2C;
+  --mto-lavender: #AD9EE8;
+  --mto-ink: #212529;
+}
+
+body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+/* Navigation dropdown with grouped headers */
+.dropdown-menu { max-height: 80vh; overflow-y: auto; }
+.dropdown-header { font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: var(--mto-orange); font-weight: 800; }
+.dropdown-item { font-size: .85rem; }
+.dropdown-item .ch { display: inline-block; min-width: 1.6rem; color: #9a8fd0; font-weight: 800; }
+
+/* Project hero */
+.project-hero {
+  position: relative;
+  min-height: 46vh;
+  display: flex; align-items: center; justify-content: center;
+  background-size: cover; background-position: center;
+  color: #fff; text-align: center;
+}
+.project-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,16,40,.55), rgba(20,16,40,.7)); }
+.project-hero .hero-inner { position: relative; max-width: 900px; padding: 3rem 1.5rem; }
+.project-hero .kicker { display: inline-block; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 800; background: rgba(226,106,44,.9); padding: .35rem .8rem; border-radius: 999px; margin-bottom: 1rem; }
+.project-hero h1 { font-weight: 800; }
+
+/* Section headings inside project pages */
+.project-body h2 { color: var(--mto-orange); font-weight: 800; font-size: 1.5rem; margin-bottom: .9rem; }
+.project-body section { margin-bottom: 2.75rem; }
+.project-body ul li { margin-bottom: .4rem; }
+
+/* Facts card */
+.facts-card { border: 0; border-radius: 1rem; box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.08); }
+.facts-card dt { font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: #7a6fc0; font-weight: 800; }
+.facts-card dd { margin-bottom: .9rem; font-size: .92rem; }
+.skill-badge { display: inline-block; background: #f3f0ff; color: #4b3fa0; border-radius: 999px; padding: .25rem .7rem; font-size: .78rem; font-weight: 600; margin: 0 .3rem .4rem 0; }
+.status-badge { display: inline-block; border-radius: 999px; padding: .25rem .75rem; font-size: .75rem; font-weight: 800; }
+.status-published { background: #e6f4ea; color: #1e6b34; }
+.status-submitted { background: #fff3e0; color: #a14a12; }
+.status-prep { background: #eef0f3; color: #4a5260; }
+
+/* Figures */
+.figure-box { background: var(--mto-lavender); padding: 1rem; border-radius: 1rem; }
+.figure-box img { border-radius: .6rem; width: 100%; height: auto; background: #fff; }
+.figure-box figcaption { color: #fff; font-size: .85rem; margin-top: .6rem; }
+
+/* Citation box */
+.citation { border-left: 4px solid var(--mto-orange); background: #fff; border-radius: .5rem; padding: 1rem 1.25rem; margin-bottom: 1rem; box-shadow: 0 .25rem .75rem rgba(0,0,0,.05); }
+.citation .cite-text { font-size: .92rem; }
+.citation .btn { font-size: .78rem; }
+
+/* Project cards on the overview page */
+.project-card { transition: transform .15s ease, box-shadow .15s ease; }
+.project-card:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem rgba(0,0,0,.12) !important; }
+.project-card img.cover { width: 100%; height: 180px; object-fit: cover; border-top-left-radius: 1rem; border-top-right-radius: 1rem; }
+.project-card .card-title { font-weight: 800; color: var(--mto-ink); }
+.project-card .chapter-no { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--mto-orange); font-weight: 800; }
+
+/* Prev / next */
+.pager-link { display: block; padding: 1rem 1.25rem; border-radius: .75rem; background: #fff; box-shadow: 0 .25rem .75rem rgba(0,0,0,.06); text-decoration: none; color: var(--mto-ink); height: 100%; }
+.pager-link small { display: block; color: #7a6fc0; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: .7rem; }
+.pager-link:hover { box-shadow: 0 .5rem 1.25rem rgba(0,0,0,.12); }
+
+/* Publications */
+.pub-year { font-weight: 800; color: var(--mto-orange); }
+.project-card .card-body p { color: #495057 !important; }
+.project-card .card-body p.text-muted { color: #8a8f98 !important; }
+.project-card.bg-gradient-primary-to-secondary .card-body p { color: #fff !important; }
+.navbar { position: relative; z-index: 1030; }

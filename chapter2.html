@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>GC-Orbitrap Method Development | Merve T. Öztoprak</title>
+  <meta name="description" content="Built a GC-Orbitrap workflow with a peak broadening reservoir to measure 13C in a phytane fragment from about 13 nmol of analyte." />
+  <meta name="author" content="Merve Tomečková Öztoprak" />
+  <meta property="og:title" content="GC-Orbitrap Method Development | Merve T. Öztoprak" />
+  <meta property="og:description" content="Built a GC-Orbitrap workflow with a peak broadening reservoir to measure 13C in a phytane fragment from about 13 nmol of analyte." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Merve Tomečková Öztoprak",
+  "alternateName": ["Merve Öztoprak", "Merve T. Öztoprak"],
+  "jobTitle": "Analytical Scientist",
+  "affiliation": {"@type": "Organization", "name": "NIOZ Royal Netherlands Institute for Sea Research"},
+  "alumniOf": ["Utrecht University", "Uppsala University", "Ludwig Maximilian University of Munich", "University of Göttingen"],
+  "knowsAbout": ["Orbitrap mass spectrometry", "Stable isotope analysis", "Position specific isotope analysis", "LC-MS", "GC-MS", "IRMS", "Organic geochemistry", "Forensic chemistry"],
+  "url": "https://isotrace.github.io/MerveOztoprak/",
+  "sameAs": ["https://www.linkedin.com/in/merve-oeztoprak/", "https://orcid.org/0000-0001-9506-8515", "https://github.com/IsoTrace"]
+}
+</script>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+<main class="flex-shrink-0">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+    <div class="container px-5">
+      <a class="navbar-brand fw-bolder text-primary" href="index.html">Merve T. Öztoprak</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutme.html">About me</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="projects.html" id="navbarProjects" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarProjects">
+              <li><h6 class="dropdown-header">PhD thesis</h6></li>
+              <li><a class="dropdown-item" href="phd-thesis.html"><span class="ch">●</span>Thesis overview</a></li>
+              <li><a class="dropdown-item" href="chapter1.html"><span class="ch">1</span>Isotope MS Perspective</a></li>
+              <li><a class="dropdown-item" href="chapter2.html"><span class="ch">2</span>GC-Orbitrap Method Development</a></li>
+              <li><a class="dropdown-item" href="chapter3.html"><span class="ch">3</span>LC-Orbitrap Method Validation</a></li>
+              <li><a class="dropdown-item" href="chapter4.html"><span class="ch">4</span>Isotopic Source Attribution</a></li>
+              <li><a class="dropdown-item" href="chapter5.html"><span class="ch">5</span>Metabolic Pathway Tracing</a></li>
+              <li><a class="dropdown-item" href="chapter6.html"><span class="ch">6</span>Isotopologue Modelling</a></li>
+              <li><hr class="dropdown-divider"></li><li><h6 class="dropdown-header">Earlier research</h6></li>
+              <li><a class="dropdown-item" href="precambrian-biomarkers.html">GC-MS Biomarker Analysis</a></li>
+              <li><a class="dropdown-item" href="lake-seeburg.html">Environmental Lake Monitoring</a></li>
+              <li><a class="dropdown-item" href="archaeal-lipids.html">Lipid Biomarkers &amp; GC-IRMS</a></li>
+              <li><a class="dropdown-item" href="bayer-ecotoxicology.html">GLP Ecotoxicology Testing</a></li>
+              <li><a class="dropdown-item" href="cuhk-soil-ecology.html">Soil Ecology Fieldwork</a></li>
+              <li><a class="dropdown-item" href="dlr-astrobiology.html">Radiation Microbiology</a></li>
+              <li><hr class="dropdown-divider"></li><li><a class="dropdown-item fw-bold" href="projects.html">All projects</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="project-hero" style="background-image:url('assets/web/caltech_bg.jpg')">
+    <div class="hero-inner">
+      <div class="kicker">PhD thesis &middot; Chapter 2</div>
+      <h1 class="display-5">Carbon Isotopes in Fragment Ions of Phytane</h1>
+      <p class="lead fw-normal mb-0">First natural abundance isotope measurement of a long chain hydrocarbon fragment, developed at Caltech</p>
+    </div>
+  </header>
+  <section class="py-5 project-body">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-5">
+        <div class="col-lg-8 order-2 order-lg-1">
+          <section><h2>Overview</h2><p class="lead">Phytane is one of the most common molecules in sediments and oils. It can derive from the chlorophyll side chain of photosynthesizers or from archaeal membrane lipids, and its carbon isotope composition has long been used to reconstruct past environments. Compound specific analysis only gives one average value for all twenty carbon atoms. In this chapter I developed a GC-Orbitrap method to look inside the molecule instead.</p></section><section><h2>Methods</h2><p>Phytane was separated by gas chromatography and ionized by electron ionization on a GC-Orbitrap system. Two introduction modes were compared. In direct elution the analyte enters the ion source straight from the column. In the peak broadener (peak capture) mode the eluting compound is trapped in a reservoir and released slowly, stretching a peak of a few seconds into a stable signal of about an hour. The <sup>13</sup>C/12C ratio of the diagnostic C<sub>6</sub>H<sub>13</sub><sup>+</sup> fragment ion (m/z 85) was then measured at high mass resolution, which separates the <sup>13</sup>C isotopologue from interfering ions.</p>
+<p>Raw scans were filtered and processed with custom R pipelines, errors were propagated and compared with the theoretical shot noise limit, and results were benchmarked against molecular average values from GC-IRMS.</p></section><section><h2>Key results</h2><ul>
+<li>Precision of better than 0.7‰ (standard error) and reproducibility of better than 1.3‰ (standard deviation, triplicates on consecutive days).</li>
+<li>Only about 13 nmol of phytane needed per acquisition.</li>
+<li>Measurement error approached the shot noise limit, the best precision physically possible for the number of ions counted.</li>
+<li>Phytane derived from a cyanobacterium (<em>Anacystis nidulans</em>), from an archaeon (<em>Halobacterium</em> sp.) and from a commercial standard showed fragment differences consistent with their molecular averages, validating the measurement.</li>
+</ul></section><section><h2>Impact</h2><p>These were the first observations of intramolecular isotope differences in a long chain hydrocarbon at natural abundance. The work established Orbitrap isotope analysis as viable for sedimentary biomarkers, not only for small polar molecules such as amino acids, and laid the groundwork for the multi fragment phytol method in Chapter 3.</p></section>
+          <section><h2>Figures</h2><figure class="figure-box shadow mb-4"><img src="assets/web/caltech_method.png" alt="(A) Direct elution and (B) peak broadener introduction on the GC-Orbitrap. (C, D) MS2 chromatograms in peak broadener mode, with the acquisition window narrowed to the C6 fragment." loading="lazy" /><figcaption>(A) Direct elution and (B) peak broadener introduction on the GC-Orbitrap. (C, D) MS2 chromatograms in peak broadener mode, with the acquisition window narrowed to the C<sub>6</sub> fragment.</figcaption></figure></section>
+          <section><h2>Publication</h2><div class="citation"><div class="mb-1"><span class="status-badge status-submitted">Submitted</span></div><div class="cite-text"><strong>Tomečková Öztoprak, M.</strong>, van der Meer, M. T. J., Schouten, S., Villanueva, L., &amp; Eiler, J. M. Measuring carbon isotopic signatures of mass spectrometric fragment ions of phytane using ultra high resolution Orbitrap mass spectrometry. Submitted to <em>International Journal of Mass Spectrometry</em>.</div></div></section>
+        </div>
+        <aside class="col-lg-4 order-1 order-lg-2 mb-5">
+          <div class="card facts-card sticky-lg-top" style="top:1.5rem">
+            <div class="card-body p-4">
+              <img class="img-fluid rounded-3 mb-4 bg-white" src="assets/web/caltech_method.png" alt="GC-Orbitrap Method Development" />
+              <dl class="mb-2"><dt>Thesis chapter</dt><dd>Chapter 2 of 6</dd><dt>Where</dt><dd>California Institute of Technology (Eiler lab), with NIOZ</dd><dt>Period</dt><dd>2018 to 2019, written up during the PhD</dd><dt>Collaborators</dt><dd>John M. Eiler, Marcel van der Meer, Stefan Schouten, Laura Villanueva</dd><dt>Status</dt><dd><span class="status-badge status-submitted">Submitted</span></dd></dl>
+              <dt class="small text-uppercase fw-bolder mb-2" style="color:#7a6fc0;font-size:.72rem;letter-spacing:.08em">Skills &amp; techniques</dt>
+              <div><span class="skill-badge">GC-Orbitrap MS</span><span class="skill-badge">Electron ionization</span><span class="skill-badge">Method development</span><span class="skill-badge">Shot noise error models</span><span class="skill-badge">R data processing</span><span class="skill-badge">GC-IRMS benchmarking</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="row mt-4"><div class="col-md-6 mb-3"><a class="pager-link text-start" href="chapter1.html"><small>Previous</small>Chapter 1 &middot; Isotope Ratio MS Perspective</a></div><div class="col-md-6 mb-3"><a class="pager-link text-end" href="chapter3.html"><small>Next</small>Chapter 3 &middot; LC-Orbitrap Method Validation</a></div></div>
+      <div class="text-center mt-3"><a class="btn btn-primary btn-lg px-4" href="phd-thesis.html"><i class="bi bi-arrow-left me-2"></i>Thesis overview</a></div>
+    </div>
+  </section>
+</main>
+<footer class="bg-white py-4 mt-auto">
+  <div class="container px-5">
+    <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+      <div class="col-auto"><div class="small m-0">Copyright &copy; Merve Tomečková Öztoprak 2026</div></div>
+      <div class="col-auto">
+        <a class="small" href="https://www.linkedin.com/in/merve-oeztoprak/" target="_blank" rel="noopener">LinkedIn</a><span class="mx-1">&middot;</span>
+        <a class="small" href="https://orcid.org/0000-0001-9506-8515" target="_blank" rel="noopener">ORCID</a><span class="mx-1">&middot;</span>
+        <a class="small" href="https://github.com/IsoTrace" target="_blank" rel="noopener">GitHub</a><span class="mx-1">&middot;</span>
+        <a class="small" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
