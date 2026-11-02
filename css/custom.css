@@ -70,3 +70,13 @@ body { font-family: 'Plus Jakarta Sans', sans-serif; }
 .project-card.bg-gradient-primary-to-secondary .card-body p { color: #fff !important; }
 .navbar { position: relative; z-index: 1030; }
 .figure-hero .kicker { display: inline-block; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 800; background: rgba(255,255,255,.25); padding: .35rem .8rem; border-radius: 999px; margin-bottom: 1rem; }
+/* Hero variant for schematic figures: text on the left, full figure on white to the right */
+.project-hero.hero-fig { justify-content: flex-start; text-align: left; min-height: 52vh;
+  background-color: #fff; background-repeat: no-repeat; background-size: auto calc(100% - 2.5rem); background-position: right 3% center; min-height: 56vh; }
+.project-hero.hero-fig::before { background: linear-gradient(90deg, #2b2450 0%, #3b2f6e 42%, rgba(59,47,110,0) 44%); }
+.project-hero.hero-fig .hero-inner { max-width: 42%; margin-left: 4%; }
+@media (max-width: 991px) {
+  .project-hero.hero-fig { background-size: calc(100% - 1.5rem) auto; background-position: center bottom .75rem; padding-bottom: calc(78vw + 1.5rem); }
+  .project-hero.hero-fig::before { bottom: calc(78vw + 1.5rem); background: linear-gradient(180deg, #2b2450, #3b2f6e); }
+  .project-hero.hero-fig .hero-inner { max-width: 100%; margin: 0; }
+}
